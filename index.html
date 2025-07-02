@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Products Syria - منتجات صينية في سوريا</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#home" data-translate="brand_name">
+                    <i class="fas fa-shopping-bag text-gold me-2"></i>
+                    <span class="fw-bold">Syria Store</span>
+                </a>
+
+                <div class="search-container d-none d-md-flex mx-4 flex-grow-1">
+                    <div class="input-group">
+                        <button class="btn btn-gold" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <input type="text" class="form-control" placeholder="البحث عن المنتجات...">
+                    </div>
+                </div>
+
+                <div class="navbar-nav flex-row align-items-center">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle language-switcher" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i>
+                            <span class="d-none d-sm-inline" data-translate="language">العربية</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="#" data-lang="ar">
+                                    <i class="fas fa-check me-2"></i>
+                                    <span data-translate="arabic">العربية</span>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en">
+                                    <i class="fas fa-globe me-2"></i>
+                                    <span data-translate="english">English</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link px-2" href="#"><i class="fas fa-heart"></i></a>
+                    <a class="nav-link px-2" href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav-link px-2" href="#"><i class="fas fa-user"></i></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home" data-translate="home">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#categories"
+                                data-translate="categories">المنتجات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#offers" data-translate="offers">العروض</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#request" data-translate="request">طلب من
+                                الصين</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" data-translate="contact">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active"
+                style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title animate-slide-up" data-translate="hero_title">منتجات صينية في متناول يدك
+                        </h1>
+                        <p class="hero-subtitle animate-slide-up" data-translate="hero_subtitle">أقل الأسعار - شحن سريع
+                            - موثوق 100%</p>
+                        <a href="#categories" class="btn btn-gold btn-lg animate-slide-up"
+                            data-translate="start_shopping">ابدأ التسوق</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="categories_title">الفئات الرئيسية</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="electronics.html" class="category-link">
+                        <div class="category-card">
+                            <div class="category-icon">📱</div>
+                            <h5 data-translate="electronics">الكترونيات</h5>
+                            <p data-translate="electronics_description">هواتف، لابتوب، اكسسوارات</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="toys.html" class="category-link">
+                        <div class="category-card">
+                            <div class="category-icon">🧸</div>
+                            <h5 data-translate="toys">ألعاب</h5>
+                            <p data-translate="toys_description">ألعاب تعليمية، ألعاب أطفال</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">🏠</div>
+                        <h5 data-translate="home_and_kitchen">المنزل والمطبخ</h5>
+                        <p data-translate="home_and_kitchen_description">أدوات منزلية ومطبخية</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">💄</div>
+                        <h5 data-translate="beauty_and_care">الجمال والعناية</h5>
+                        <p data-translate="beauty_and_care_description">مستحضرات تجميل وعناية</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">🎒</div>
+                        <h5 data-translate="bags_and_accessories">الحقائب والاكسسوارات</h5>
+                        <p data-translate="bags_and_accessories_description">حقائب وإكسسوارات أنيقة</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="category-card">
+                        <div class="category-icon">🌟</div>
+                        <h5 data-translate="best_selling">الأكثر مبيعاً في سوريا</h5>
+                        <p data-translate="best_selling_description">المنتجات الرائجة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Deals -->
+    <section id="offers" class="offers-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-8">
+                    <h2 class="section-title mb-0" data-translate="offers_title">عروض اليوم</h2>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="countdown-timer">
+                        <span data-translate="countdown_timer">العرض ينتهي خلال: </span>
+                        <span id="countdown" class="fw-bold text-black"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                alt="Product">
+                            <div class="discount-badge">-50%</div>
+                        </div>
+                        <div class="product-info">
+                            <h6 data-translate="product_name">سماعات لاسلكية</h6>
+                            <div class="price">
+                                <span class="new-price">25$</span>
+                                <span class="old-price">50$</span>
+                            </div>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100" data-translate="add_to_cart">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for more products -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Request from China Section -->
+    <section id="request" class="request-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="request-card">
+                        <h2 class="text-center mb-4" data-translate="request_title">اطلب منتجك من الصين</h2>
+                        <p class="text-center mb-4" data-translate="request_subtitle">الصق رابط المنتج من AliExpress،
+                            Temu، أو 1688 وسنحضره لك</p>
+                        <form class="request-form">
+                            <div class="mb-3">
+                                <label class="form-label" data-translate="product_link">رابط المنتج</label>
+                                <input type="url" class="form-control"
+                                    data-translate-placeholder="product_link_placeholder"
+                                    placeholder="الصق هنا رابط المنتج من AliExpress أو Temu أو 1688">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label" data-translate="full_name">الاسم الكامل</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label" data-translate="phone_number">رقم الهاتف</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" data-translate="additional_notes">ملاحظات إضافية</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gold w-100" data-translate="send_request">إرسال
+                                الطلب</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="reviews_title">آراء العملاء</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="review-card">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p data-translate="review_1">"استلمت خلال 5 أيام، جودة ممتازة! 🔥"</p>
+                        <div class="reviewer">
+                            <strong data-translate="reviewer_1">طارق ديراني</strong>
+                            <small class="text-muted" data-translate="city_1">- دمشق</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- More reviews -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="faq_title">الأسئلة الشائعة</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1" data-translate="faq_question_1">
+                                    كيف أقوم بالطلب؟
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-translate="faq_answer_1">
+                                    يمكنك التسوق مباشرة من الموقع أو استخدام خدمة "اطلب من الصين" بلصق رابط المنتج.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More FAQ items -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-translate="contact_title">تواصل معنا</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp text-success me-3"></i>
+                            <span>WhatsApp: +963 XXX XXX XXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-telegram text-primary me-3"></i>
+                            <span>Telegram: @ChinaSyria</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock text-gold me-3"></i>
+                            <span data-translate="working_hours">ساعات العمل: 9:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" data-translate-placeholder="name_placeholder"
+                                    placeholder="الاسم" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" data-translate-placeholder="email_placeholder"
+                                    placeholder="البريد الإلكتروني" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" data-translate-placeholder="message_placeholder"
+                                placeholder="الرسالة" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold" data-translate="send_message">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-gold mb-3">China Syria</h5>
+                    <p data-translate="footer_description">أفضل المنتجات الصينية بأسعار منافسة وتوصيل سريع إلى سوريا</p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="text-gold mb-3" >روابط سريعة</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white-50">الرئيسية</a></li>
+                        <li><a href="#categories" class="text-white-50">المنتجات</a></li>
+                        <li><a href="#offers" class="text-white-50">العروض</a></li>
+                        <li><a href="#contact" class="text-white-50">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-gold mb-3">السياسات</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">سياسة الخصوصية</a></li>
+                        <li><a href="#" class="text-white-50">سياسة الإرجاع</a></li>
+                        <li><a href="#" class="text-white-50">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-gold mb-3">طرق الدفع</h6>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa me-2"></i>
+                        <i class="fab fa-cc-mastercard me-2"></i>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 China Syria. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

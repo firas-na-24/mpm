@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإلكترونيات - Syria Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-shopping-bag text-gold me-2"></i>
+                    <span class="fw-bold" data-translate="brand_name">Syria Store</span>
+                </a>
+                
+                <div class="search-container d-none d-md-flex mx-4 flex-grow-1">
+                    <div class="input-group">
+                        <button class="btn btn-gold" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <input type="text" class="form-control" data-translate-placeholder="search_placeholder" placeholder="البحث عن المنتجات...">
+                    </div>
+                </div>
+                
+                <div class="navbar-nav flex-row align-items-center">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle language-switcher" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i>
+                            <span class="d-none d-sm-inline" data-translate="language">العربية</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="#" data-lang="ar">
+                                <i class="fas fa-check me-2"></i><span data-translate="arabic">العربية</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en">
+                                <i class="fas fa-globe me-2"></i><span data-translate="english">English</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link px-2" href="#"><i class="fas fa-heart"></i></a>
+                    <a class="nav-link px-2" href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav-link px-2" href="#"><i class="fas fa-user"></i></a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-translate="home">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#categories" data-translate="categories">المنتجات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#offers" data-translate="offers">العروض</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#request" data-translate="request">طلب من الصين</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact" data-translate="contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section py-3 bg-light">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" data-translate="home">الرئيسية</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" data-translate="electronics">الإلكترونيات</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Category Header -->
+    <section class="category-header py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="category-info">
+                        <div class="category-icon-lg mb-3">📱</div>
+                        <h1 class="mb-0" data-translate="electronics">الإلكترونيات</h1>
+                        <p class="category-description">أحدث الهواتف الذكية، أجهزة الكمبيوتر، والإكسسوارات الإلكترونية بأفضل الأسعار</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="products-count">
+                        <span class="count-number">4</span>
+                        <span class="count-text" data-translate="products_available">منتج متاح</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters and Sorting -->
+    <section class="filters-section py-4 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="filters-container">
+                        <h6 class="mb-3" data-translate="filter_by">تصفية حسب:</h6>
+                        <div class="filter-buttons">
+                            <button class="btn btn-outline-secondary btn-sm me-2 active filter-btn" data-filter="all" data-translate="all">الكل</button>
+                            <button class="btn btn-outline-secondary btn-sm me-2 filter-btn" data-filter="smartphones" data-translate="smartphones">هواتف ذكية</button>
+                            <button class="btn btn-outline-secondary btn-sm me-2 filter-btn" data-filter="computers" data-translate="computers">أجهزة كمبيوتر</button>
+                            <button class="btn btn-outline-secondary btn-sm me-2 filter-btn" data-filter="accessories" data-translate="accessories">إكسسوارات</button>
+                            <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="headphones" data-translate="headphones">سماعات</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sorting-container text-md-end">
+                        <label class="form-label me-2" data-translate="sort_by">ترتيب حسب:</label>
+                        <select class="form-select d-inline-block w-auto">
+                            <option data-translate="newest">الأحدث</option>
+                            <option data-translate="price_low_high">السعر: من الأقل للأعلى</option>
+                            <option data-translate="price_high_low">السعر: من الأعلى للأقل</option>
+                            <option data-translate="best_selling">الأكثر مبيعاً</option>
+                            <option data-translate="highest_rated">الأعلى تقييماً</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 product-item" data-category="headphones" data-price="25">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="سماعات بلوتوث">
+                            <div class="product-badges">
+                                <span class="badge bg-danger">-30%</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="product-name" data-translate="product_bluetooth_headphones">سماعات بلوتوث لاسلكية</h6>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="rating-count">(45)</span>
+                            </div>
+                            <div class="product-price mb-2">
+                                <span class="current-price">$25</span>
+                                <span class="original-price">$35</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 product-item" data-category="smartphones" data-price="180">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="هاتف ذكي">
+                            <div class="product-badges">
+                                <span class="badge bg-success">جديد</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="product-name">هاتف ذكي 128GB</h6>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="rating-count">(23)</span>
+                            </div>
+                            <div class="product-price mb-2">
+                                <span class="current-price">$180</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 product-item" data-category="accessories" data-price="45">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="ساعة ذكية">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="product-name">ساعة ذكية رياضية</h6>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="rating-count">(67)</span>
+                            </div>
+                            <div class="product-price mb-2">
+                                <span class="current-price">$45</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 product-item" data-category="computers" data-price="650">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="لابتوب">
+                            <div class="product-badges">
+                                <span class="badge bg-warning">مميز</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="product-name">لابتوب للألعاب 16GB RAM</h6>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="rating-count">(12)</span>
+                            </div>
+                            <div class="product-price mb-2">
+                                <span class="current-price">$650</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More products... -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="كاميرا">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="product-name">كاميرا رقمية احترافية</h6>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="rating-count">(34)</span>
+                            </div>
+                            <div class="product-price mb-2">
+                                <span class="current-price">$320</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="سماعات رأس">
+                            <div class="product-badges">
+                                <span class="badge bg-danger">-25%</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="product-name">سماعات رأس احترافية</h6>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="rating-count">(56)</span>
+                            </div>
+                            <div class="product-price mb-2">
+                                <span class="current-price">$60</span>
+                                <span class="original-price">$80</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1585792180666-f7347c490ee2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="تابلت">
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="product-name">تابلت 10 بوصة</h6>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="rating-count">(28)</span>
+                            </div>
+                            <div class="product-price mb-2">
+                                <span class="current-price">$150</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="سماعات أذن">
+                            <div class="product-badges">
+                                <span class="badge bg-success">جديد</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6 class="product-name">سماعات أذن لاسلكية</h6>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <div class="product-price mb-2">
+                                <span class="current-price">$35</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-gold mb-3">Syria Store</h5>
+                    <p>أفضل المنتجات الصينية بأسعار منافسة وتوصيل سريع إلى سوريا</p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="text-gold mb-3">روابط سريعة</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">الرئيسية</a></li>
+                        <li><a href="#" class="text-white-50">المنتجات</a></li>
+                        <li><a href="index.html#offers" class="text-white-50">العروض</a></li>
+                        <li><a href="index.html#contact" class="text-white-50">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-gold mb-3">السياسات</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">سياسة الخصوصية</a></li>
+                        <li><a href="#" class="text-white-50">سياسة الإرجاع</a></li>
+                        <li><a href="#" class="text-white-50">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-gold mb-3">طرق الدفع</h6>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa me-2"></i>
+                        <i class="fab fa-cc-mastercard me-2"></i>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Syria Store. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
